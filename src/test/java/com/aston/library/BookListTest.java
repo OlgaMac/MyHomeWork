@@ -90,7 +90,7 @@ class BookListTest {
 
     @Test
     public void whenElementRemovedByIndexThenSizeMustBeDecreased() {
-        assertTrue(bookList.removeAt(4));
+        assertTrue(bookList.removeAt(9));
         assertEquals(9, bookList.size());
     }
 

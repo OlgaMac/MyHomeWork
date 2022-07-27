@@ -25,9 +25,7 @@ public class BookArrayList implements BookList {
     @Override
     public void add(int index, Book book) {
         increaseArray();
-        if (index < 0 || index > size) {
-            throw new IndexOutOfBoundsException();
-        }
+        checkIndex(index);
         System.arraycopy(array, index, array, index + 1, size - index);
         array[index] = book;
         size++;
@@ -53,7 +51,7 @@ public class BookArrayList implements BookList {
     @Override
     public boolean removeAt(int index) {
         checkIndex(index);
-        if (size - 1 - index >= 0) System.arraycopy(array, index + 1, array, index, size - 1 - index);
+        System.arraycopy(array, index + 1, array, index, size - 1 - index);
         size--;
         return true;
     }
@@ -87,7 +85,7 @@ public class BookArrayList implements BookList {
     }
 
     private void checkIndex(int index) {
-        if (index < 0 || index >= size) {
+        if (index < 0 || index > size) {
             throw new IndexOutOfBoundsException();
         }
     }
