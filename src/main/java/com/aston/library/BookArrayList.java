@@ -3,6 +3,8 @@ package com.aston.library;
 import java.util.Arrays;
 import java.util.Objects;
 
+import static java.lang.System.*;
+
 public class BookArrayList implements BookList {
 
     private Book[] array = new Book[10];
@@ -26,7 +28,9 @@ public class BookArrayList implements BookList {
     public void add(int index, Book book) {
         increaseArray();
         checkIndex(index);
-        System.arraycopy(array, index, array, index + 1, size - index);
+        for (int i = size; i > index; i--) {
+            array[i] = array[i - 1];
+        }
         array[index] = book;
         size++;
 
@@ -51,7 +55,9 @@ public class BookArrayList implements BookList {
     @Override
     public boolean removeAt(int index) {
         checkIndex(index);
-        System.arraycopy(array, index + 1, array, index, size - 1 - index);
+        for (int i = index; i < size - 1; i++) {
+            array[i] = array[i + 1];
+        }
         size--;
         return true;
     }
