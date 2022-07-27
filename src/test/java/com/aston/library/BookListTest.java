@@ -10,7 +10,7 @@ class BookListTest {
     private BookList bookList;
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         // init
         bookList = new BookArrayList();
         bookList.add(new Book("Effective Java", "Joshua Bloch"));
@@ -38,7 +38,7 @@ class BookListTest {
     }
 
     @Test
-    void testAddByIndexIntoMiddle() {
+    public void testAddByIndexIntoMiddle() {
         Book book = new Book("Война и Мир", "Лев Толстой");
         bookList.add(5, book);
         Book bookFromList = bookList.get(5);
@@ -48,7 +48,7 @@ class BookListTest {
 
 
     @Test
-    void testAddByIndexIntoFirstPosition() {
+    public void testAddByIndexIntoFirstPosition() {
         Book book = new Book("Война и Мир", "Лев Толстой");
         bookList.add(0, book);
         Book bookFromList = bookList.get(0);
@@ -95,14 +95,14 @@ class BookListTest {
     }
 
     @Test
-    void testIndexOfMethod() {
+    public void testIndexOfMethod() {
         Book book = bookList.get(5);
         int index = bookList.indexOf(book);
         assertEquals(5, index);
     }
 
     @Test
-    void whenListIsEmptyThenReturnTrue() {
+    public void whenListIsEmptyThenReturnTrue() {
         assertFalse(bookList.isEmpty());
         bookList.clear();
         assertTrue(bookList.isEmpty());
