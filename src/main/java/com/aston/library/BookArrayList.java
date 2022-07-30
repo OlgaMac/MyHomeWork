@@ -3,7 +3,6 @@ package com.aston.library;
 import java.util.Arrays;
 import java.util.Objects;
 
-import static java.lang.System.*;
 
 public class BookArrayList implements BookList {
 
@@ -21,7 +20,6 @@ public class BookArrayList implements BookList {
         increaseArray();
         array[size] = book;
         size++;
-
     }
 
     @Override
@@ -89,13 +87,11 @@ public class BookArrayList implements BookList {
         size = 0;
 
     }
-
     private void checkIndex(int index) {
         if (index < 0 || index > size) {
             throw new IndexOutOfBoundsException();
         }
     }
-
     private void increaseArray() {
         if (size >= array.length) {
             array = Arrays.copyOf(array, array.length * 2);

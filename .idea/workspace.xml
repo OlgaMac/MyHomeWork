@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d80b7c4-d843-4227-894e-da252ada4791" name="Changes" comment="fix-2">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5d80b7c4-d843-4227-894e-da252ada4791" name="Changes" comment="fix-3">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aston/library/BookArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aston/library/BookArrayList.java" afterDir="false" />
     </list>
@@ -40,18 +40,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Файлы с Windows/IdeaProjects/test-sorting&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "D:/Файлы с Windows/IdeaProjects/SEVRELETS/atm-service",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -160,7 +160,11 @@
       <updated>1658858809910</updated>
       <workItem from="1658858812718" duration="5159000" />
       <workItem from="1658908224808" duration="14455000" />
-      <workItem from="1658955327055" duration="336000" />
+      <workItem from="1658955327055" duration="748000" />
+      <workItem from="1658956985277" duration="250000" />
+      <workItem from="1659021477544" duration="579000" />
+      <workItem from="1659022082248" duration="1320000" />
+      <workItem from="1659185510300" duration="793000" />
     </task>
     <task id="LOCAL-00001" summary="created MyArrayList">
       <created>1658920813422</created>
@@ -190,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658928327122</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix-3">
+      <created>1658955828160</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1658955828160</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +222,7 @@
     <MESSAGE value="created MyArrayList" />
     <MESSAGE value="fix-1" />
     <MESSAGE value="fix-2" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix-2" />
+    <MESSAGE value="fix-3" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix-3" />
   </component>
 </project>
